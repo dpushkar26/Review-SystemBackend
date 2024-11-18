@@ -1,0 +1,23 @@
+{
+  "name": "nodevember-project",
+  "version": "1.0.0",
+  "description": "Backend Project of Company Review System",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start":"node ./api/index.js",
+    "dev": "nodemon ./api/index.js",
+    "lint": "eslint.",
+    "format": "prettier --write.",
+    "precommit": "lint-staged",
+    "prepush": "npm run lint && npm run test"
+    
+  },
+  "author": "Pushkar Deore",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  }
+}
